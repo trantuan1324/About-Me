@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C5EE86CC08B3FBD89594B88 /* Pods_About_me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E9CA997754B7DC49045B7B /* Pods_About_me.framework */; };
+		6C5B5DDE2C56ECEB0048E2CC /* AstronomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5B5DDD2C56ECEB0048E2CC /* AstronomyViewController.swift */; };
 		6CB951A82C54DB9100FC3DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB951A72C54DB9100FC3DA6 /* AppDelegate.swift */; };
 		6CB951AA2C54DB9100FC3DA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB951A92C54DB9100FC3DA6 /* SceneDelegate.swift */; };
 		6CB951AC2C54DB9100FC3DA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB951AB2C54DB9100FC3DA6 /* ViewController.swift */; };
 		6CB951AF2C54DB9100FC3DA6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6CB951AE2C54DB9100FC3DA6 /* Base */; };
 		6CB951B12C54DB9100FC3DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB951B02C54DB9100FC3DA6 /* Assets.xcassets */; };
 		6CB951B42C54DB9100FC3DA6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6CB951B32C54DB9100FC3DA6 /* Base */; };
+		6CFED2F92C562344001D0EE4 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2F82C562344001D0EE4 /* PhotoInfo.swift */; };
+		6CFED2FE2C56800C001D0EE4 /* FamilyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2FC2C56800C001D0EE4 /* FamilyTableViewCell.swift */; };
+		6CFED2FF2C56800C001D0EE4 /* FamilyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFED2FD2C56800C001D0EE4 /* FamilyTableViewCell.xib */; };
+		6CFED3012C568ACD001D0EE4 /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED3002C568ACD001D0EE4 /* FamilyViewController.swift */; };
+		6CFED3042C568CCF001D0EE4 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED3032C568CCF001D0EE4 /* Member.swift */; };
+		6CFED3102C56C2BC001D0EE4 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED30F2C56C2BC001D0EE4 /* HobbyViewController.swift */; };
+		6CFED3132C56C730001D0EE4 /* HobbyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED3112C56C730001D0EE4 /* HobbyTableViewCell.swift */; };
+		6CFED3142C56C730001D0EE4 /* HobbyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFED3122C56C730001D0EE4 /* HobbyTableViewCell.xib */; };
+		6CFED3182C56C7E2001D0EE4 /* Hobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED3172C56C7E2001D0EE4 /* Hobby.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58800B1667640151828CC9B4 /* Pods-About-me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-About-me.debug.xcconfig"; path = "Target Support Files/Pods-About-me/Pods-About-me.debug.xcconfig"; sourceTree = "<group>"; };
+		68E9CA997754B7DC49045B7B /* Pods_About_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_About_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C5B5DDD2C56ECEB0048E2CC /* AstronomyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyViewController.swift; sourceTree = "<group>"; };
 		6CB951A42C54DB9100FC3DA6 /* About-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "About-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB951A72C54DB9100FC3DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CB951A92C54DB9100FC3DA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,16 @@
 		6CB951B02C54DB9100FC3DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB951B32C54DB9100FC3DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CB951B52C54DB9100FC3DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFED2F82C562344001D0EE4 /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		6CFED2FC2C56800C001D0EE4 /* FamilyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTableViewCell.swift; sourceTree = "<group>"; };
+		6CFED2FD2C56800C001D0EE4 /* FamilyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FamilyTableViewCell.xib; sourceTree = "<group>"; };
+		6CFED3002C568ACD001D0EE4 /* FamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
+		6CFED3032C568CCF001D0EE4 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		6CFED30F2C56C2BC001D0EE4 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HobbyViewController.swift; path = "About-me/Controllers/HobbyViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6CFED3112C56C730001D0EE4 /* HobbyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyTableViewCell.swift; sourceTree = "<group>"; };
+		6CFED3122C56C730001D0EE4 /* HobbyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HobbyTableViewCell.xib; sourceTree = "<group>"; };
+		6CFED3172C56C7E2001D0EE4 /* Hobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobby.swift; sourceTree = "<group>"; };
+		CFE02C9DD0991DED5C2DAA93 /* Pods-About-me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-About-me.release.xcconfig"; path = "Target Support Files/Pods-About-me/Pods-About-me.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5EE86CC08B3FBD89594B88 /* Pods_About_me.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25F6DD66303F42178FF75719 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68E9CA997754B7DC49045B7B /* Pods_About_me.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A57966C691F9BF01B3AA19A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58800B1667640151828CC9B4 /* Pods-About-me.debug.xcconfig */,
+				CFE02C9DD0991DED5C2DAA93 /* Pods-About-me.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6CB9519B2C54DB9100FC3DA6 = {
 			isa = PBXGroup;
 			children = (
 				6CB951A62C54DB9100FC3DA6 /* About-me */,
 				6CB951A52C54DB9100FC3DA6 /* Products */,
+				4A57966C691F9BF01B3AA19A /* Pods */,
+				25F6DD66303F42178FF75719 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +100,57 @@
 		6CB951A62C54DB9100FC3DA6 /* About-me */ = {
 			isa = PBXGroup;
 			children = (
-				6CB951A72C54DB9100FC3DA6 /* AppDelegate.swift */,
-				6CB951A92C54DB9100FC3DA6 /* SceneDelegate.swift */,
+				6CFED3162C56C796001D0EE4 /* Views */,
+				6CFED3152C56C775001D0EE4 /* App */,
+				6CFED3052C568F52001D0EE4 /* Controllers */,
+				6CFED3022C568CBA001D0EE4 /* Models */,
 				6CB951AB2C54DB9100FC3DA6 /* ViewController.swift */,
 				6CB951AD2C54DB9100FC3DA6 /* Main.storyboard */,
+				6C5B5DDD2C56ECEB0048E2CC /* AstronomyViewController.swift */,
 				6CB951B02C54DB9100FC3DA6 /* Assets.xcassets */,
 				6CB951B22C54DB9100FC3DA6 /* LaunchScreen.storyboard */,
 				6CB951B52C54DB9100FC3DA6 /* Info.plist */,
+				6CFED2F82C562344001D0EE4 /* PhotoInfo.swift */,
 			);
 			path = "About-me";
+			sourceTree = "<group>";
+		};
+		6CFED3022C568CBA001D0EE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6CFED3032C568CCF001D0EE4 /* Member.swift */,
+				6CFED3172C56C7E2001D0EE4 /* Hobby.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6CFED3052C568F52001D0EE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CFED30F2C56C2BC001D0EE4 /* HobbyViewController.swift */,
+				6CFED3002C568ACD001D0EE4 /* FamilyViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6CFED3152C56C775001D0EE4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6CB951A72C54DB9100FC3DA6 /* AppDelegate.swift */,
+				6CB951A92C54DB9100FC3DA6 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6CFED3162C56C796001D0EE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6CFED2FC2C56800C001D0EE4 /* FamilyTableViewCell.swift */,
+				6CFED2FD2C56800C001D0EE4 /* FamilyTableViewCell.xib */,
+				6CFED3112C56C730001D0EE4 /* HobbyTableViewCell.swift */,
+				6CFED3122C56C730001D0EE4 /* HobbyTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CB951B82C54DB9100FC3DA6 /* Build configuration list for PBXNativeTarget "About-me" */;
 			buildPhases = (
+				DA3A6C07F4D598C1B9687FA5 /* [CP] Check Pods Manifest.lock */,
 				6CB951A02C54DB9100FC3DA6 /* Sources */,
 				6CB951A12C54DB9100FC3DA6 /* Frameworks */,
 				6CB951A22C54DB9100FC3DA6 /* Resources */,
+				028EA4B369B45ACB3C88A443 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,21 +214,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CB951B12C54DB9100FC3DA6 /* Assets.xcassets in Resources */,
+				6CFED2FF2C56800C001D0EE4 /* FamilyTableViewCell.xib in Resources */,
 				6CB951B42C54DB9100FC3DA6 /* Base in Resources */,
+				6CFED3142C56C730001D0EE4 /* HobbyTableViewCell.xib in Resources */,
 				6CB951AF2C54DB9100FC3DA6 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		028EA4B369B45ACB3C88A443 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-About-me/Pods-About-me-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-About-me/Pods-About-me-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-About-me/Pods-About-me-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA3A6C07F4D598C1B9687FA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-About-me-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6CB951A02C54DB9100FC3DA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFED3012C568ACD001D0EE4 /* FamilyViewController.swift in Sources */,
+				6C5B5DDE2C56ECEB0048E2CC /* AstronomyViewController.swift in Sources */,
+				6CFED2F92C562344001D0EE4 /* PhotoInfo.swift in Sources */,
+				6CFED3042C568CCF001D0EE4 /* Member.swift in Sources */,
+				6CFED3132C56C730001D0EE4 /* HobbyTableViewCell.swift in Sources */,
 				6CB951AC2C54DB9100FC3DA6 /* ViewController.swift in Sources */,
+				6CFED2FE2C56800C001D0EE4 /* FamilyTableViewCell.swift in Sources */,
+				6CFED3182C56C7E2001D0EE4 /* Hobby.swift in Sources */,
 				6CB951A82C54DB9100FC3DA6 /* AppDelegate.swift in Sources */,
 				6CB951AA2C54DB9100FC3DA6 /* SceneDelegate.swift in Sources */,
+				6CFED3102C56C2BC001D0EE4 /* HobbyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +343,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +406,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +427,7 @@
 		};
 		6CB951B92C54DB9100FC3DA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58800B1667640151828CC9B4 /* Pods-About-me.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,8 +438,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +454,7 @@
 		};
 		6CB951BA2C54DB9100FC3DA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE02C9DD0991DED5C2DAA93 /* Pods-About-me.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,8 +465,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
