@@ -97,7 +97,6 @@ class AstronomyViewController: UIViewController {
     func downloadImage(from imgURL: URL) {
         let task = URLSession.shared.dataTask(with: imgURL) { data, response, error in
             guard let data = data, error == nil else {
-                self.astroImageView.image = UIImage(named: "load_error")
                 print("Error: \(error?.localizedDescription ?? "No error description")")
                 return
             }
