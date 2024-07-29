@@ -11,15 +11,18 @@ class AstronomyViewController: UIViewController {
 
     @IBOutlet weak var astroImageView: UIImageView!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var resultTextView: UITextView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         resultTextView.isHidden = true
+        astroImageView.isHidden = true
+        titleLabel.isHidden = true
         
         datePicker.maximumDate = Date()
+        
         
         // Do any additional setup after loading the view.
         
@@ -30,26 +33,27 @@ class AstronomyViewController: UIViewController {
         let date = datePicker.date
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-dd-MM"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateStr = dateFormatter.string(from: date)
         print(dateStr)
 
         
-        
         Task {
             do {
-                resultTextView.isHidden = false
-                
                 guard let photoInfo = try await fetchPhotoInfo(data: dateStr) else {
                     return
                 }
+                
+                resultTextView.isHidden = false
+                titleLabel.isHidden = false
                 
                 downloadImage(from: photoInfo.url)
         
                 print("Successful!")
                 resultTextView.text = String(describing: photoInfo.description)
+                titleLabel.text = String(describing: photoInfo.title)
             } catch {
-                resultTextView.text = "Không tìm được dữ liệu :(("
+                
                 print("Failed, error: \(error)")
             }
         }
@@ -77,6 +81,10 @@ class AstronomyViewController: UIViewController {
         
         guard let httpResponse = response as? HTTPURLResponse,
               httpResponse.statusCode == 200 else {
+            self.astroImageView.isHidden = false
+            self.astroImageView.image = UIImage(named: "load_error")
+            resultTextView.text = "Không tìm được dữ liệu :(("
+            titleLabel.text = "Có gì đó sai sai"
             throw PhotoInfoError.itemNotFound
         }
         
@@ -87,20 +95,23 @@ class AstronomyViewController: UIViewController {
     }
     
     func downloadImage(from imgURL: URL) {
-            let task = URLSession.shared.dataTask(with: imgURL) { data, response, error in
-                guard let data = data, error == nil else {
-                    print("Error: \(error?.localizedDescription ?? "No error description")")
-                    return
-                }
-                
-                DispatchQueue.main.async {
-                    if let image = UIImage(data: data) {
-                        self.astroImageView.image = image
-                    }
+        let task = URLSession.shared.dataTask(with: imgURL) { data, response, error in
+            guard let data = data, error == nil else {
+                self.astroImageView.image = UIImage(named: "load_error")
+                print("Error: \(error?.localizedDescription ?? "No error description")")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                if let image = UIImage(data: data) {
+                    self.astroImageView.isHidden = false
+                    self.astroImageView.image = image
                 }
             }
-            task.resume()
         }
+        
+        task.resume()
+    }
 
 }
 

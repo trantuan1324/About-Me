@@ -366,25 +366,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="K4j-qi-eFk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load_error" translatesAutoresizingMaskIntoConstraints="NO" id="K4j-qi-eFk">
                                 <rect key="frame" x="24" y="340" width="345" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="f27-WV-aU5"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMW-y5-av8">
+                                <rect key="frame" x="15.999999999999996" y="518" width="34.666666666666657" height="19.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ygf-ad-aZ6"/>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.85098040100000005" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="SMW-y5-av8" firstAttribute="leading" secondItem="ygf-ad-aZ6" secondAttribute="leading" constant="16" id="7o8-oa-Ml5"/>
                             <constraint firstItem="ygf-ad-aZ6" firstAttribute="trailing" secondItem="zS0-l3-YId" secondAttribute="trailing" constant="24" id="CkP-na-sE4"/>
                             <constraint firstItem="L2E-YW-fSm" firstAttribute="centerX" secondItem="IvR-Oi-JL6" secondAttribute="centerX" id="Jlw-m3-RPV"/>
                             <constraint firstItem="ygf-ad-aZ6" firstAttribute="trailing" secondItem="L2E-YW-fSm" secondAttribute="trailing" constant="8" id="LH2-ix-dR2"/>
                             <constraint firstItem="K4j-qi-eFk" firstAttribute="leading" secondItem="zS0-l3-YId" secondAttribute="leading" id="VN7-gC-LBv"/>
                             <constraint firstItem="zS0-l3-YId" firstAttribute="top" secondItem="ygf-ad-aZ6" secondAttribute="top" constant="12" id="Zqn-cM-DcK"/>
+                            <constraint firstItem="SMW-y5-av8" firstAttribute="top" secondItem="K4j-qi-eFk" secondAttribute="bottom" constant="8" id="b6e-ge-Two"/>
                             <constraint firstItem="L2E-YW-fSm" firstAttribute="bottom" secondItem="ygf-ad-aZ6" secondAttribute="bottom" constant="-16" id="hGl-T1-39H"/>
                             <constraint firstItem="zS0-l3-YId" firstAttribute="leading" secondItem="ygf-ad-aZ6" secondAttribute="leading" constant="24" id="hLy-ao-UoY"/>
                             <constraint firstItem="K4j-qi-eFk" firstAttribute="top" secondItem="zS0-l3-YId" secondAttribute="bottom" constant="10" id="hsn-8y-Du2"/>
                             <constraint firstItem="L2E-YW-fSm" firstAttribute="top" secondItem="K4j-qi-eFk" secondAttribute="bottom" constant="40" id="huG-Zx-Ift"/>
+                            <constraint firstItem="ygf-ad-aZ6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SMW-y5-av8" secondAttribute="trailing" symbolic="YES" id="kHR-LK-bou"/>
                             <constraint firstItem="L2E-YW-fSm" firstAttribute="leading" secondItem="ygf-ad-aZ6" secondAttribute="leading" constant="8" id="p5n-vH-vCe"/>
                             <constraint firstItem="K4j-qi-eFk" firstAttribute="centerX" secondItem="IvR-Oi-JL6" secondAttribute="centerX" id="wgI-09-dP2"/>
                         </constraints>
@@ -394,6 +403,7 @@
                         <outlet property="astroImageView" destination="K4j-qi-eFk" id="zc5-bc-pwx"/>
                         <outlet property="datePicker" destination="ljK-tH-s8y" id="lw9-2Z-Kg7"/>
                         <outlet property="resultTextView" destination="L2E-YW-fSm" id="H9j-Tu-Dgg"/>
+                        <outlet property="titleLabel" destination="SMW-y5-av8" id="rXj-7I-ukW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7h6-N9-jfb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -424,7 +434,7 @@
     <resources>
         <image name="figure.2.and.child.holdinghands" catalog="system" width="128" height="93"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
-        <image name="music" width="630" height="630"/>
+        <image name="load_error" width="1500" height="1013"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
