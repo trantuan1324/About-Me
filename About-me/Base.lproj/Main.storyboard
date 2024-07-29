@@ -256,80 +256,6 @@
             <point key="canvasLocation" x="-385.49618320610688" y="-4.2253521126760569"/>
         </scene>
         <!--Hobby View Controller-->
-        <scene sceneID="lXf-gJ-2Ey">
-            <objects>
-                <viewController id="yLI-mz-RCF" customClass="HobbyViewController" customModule="About_me" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uh7-9U-4Iz">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sở thích cá nhân" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUO-rD-0U8">
-                                <rect key="frame" x="16" y="111" width="191" height="28.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <color key="textColor" red="0.30659811120000002" green="0.3346341799" blue="0.2950806581" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HobbyCell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BZB-3R-pbc">
-                                <rect key="frame" x="8" y="164.66666666666669" width="377" height="645.33333333333326"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.85098040100000005" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="8Gv-A7-bbS"/>
-                        <color key="backgroundColor" red="0.80000001190000003" green="0.85098040100000005" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="8Gv-A7-bbS" firstAttribute="trailing" secondItem="BZB-3R-pbc" secondAttribute="trailing" constant="8" id="3Ps-SJ-ShR"/>
-                            <constraint firstItem="RUO-rD-0U8" firstAttribute="leading" secondItem="8Gv-A7-bbS" secondAttribute="leading" constant="16" id="F2b-eG-dAE"/>
-                            <constraint firstItem="RUO-rD-0U8" firstAttribute="top" secondItem="8Gv-A7-bbS" secondAttribute="top" constant="8" id="Uz4-Ut-TTw"/>
-                            <constraint firstItem="BZB-3R-pbc" firstAttribute="top" secondItem="RUO-rD-0U8" secondAttribute="bottom" constant="25" id="XRp-Um-JpF"/>
-                            <constraint firstItem="8Gv-A7-bbS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RUO-rD-0U8" secondAttribute="trailing" symbolic="YES" id="Y1Y-qC-RhB"/>
-                            <constraint firstItem="BZB-3R-pbc" firstAttribute="leading" secondItem="8Gv-A7-bbS" secondAttribute="leading" constant="8" id="bbv-3a-quf"/>
-                            <constraint firstItem="8Gv-A7-bbS" firstAttribute="bottom" secondItem="BZB-3R-pbc" secondAttribute="bottom" constant="8" id="vsQ-6j-l8M"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="NpD-yR-0hO"/>
-                    <connections>
-                        <outlet property="hobbyTableView" destination="BZB-3R-pbc" id="mIU-K8-Gmv"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Bo-dn-sBx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1066.4122137404579" y="868.30985915492965"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="jRd-Nd-beZ">
-            <objects>
-                <viewController id="AF8-gv-Cqo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b37-jv-f5S">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="KoK-4Q-tav"/>
-                        <color key="backgroundColor" red="0.80000001190000003" green="0.85098040100000005" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g4z-Fl-EmR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1973" y="868"/>
-        </scene>
-        <!--Sở thích-->
-        <scene sceneID="s20-ow-gcq">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1bD-Q6-oJ0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sở thích" image="hand.thumbsup.fill" catalog="system" id="mWe-sI-MGE"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5vB-Af-ugU">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="yLI-mz-RCF" kind="relationship" relationship="rootViewController" id="Ztm-TB-BN6"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XkB-kf-GWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="139.69465648854961" y="868.30985915492965"/>
-        </scene>
-        <!--Hobby View Controller-->
         <scene sceneID="9WS-WV-Sl5">
             <objects>
                 <viewController id="KSc-Zg-Gf4" customClass="HobbyViewController" customModule="About_me" customModuleProvider="target" sceneMemberID="viewController">
@@ -403,48 +329,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2000-04-22" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SMv-Br-GdB">
-                                <rect key="frame" x="46" y="204" width="300" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.30659811120000002" green="0.3346341799" blue="0.2950806581" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nhập ngày của bạn:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uck-k3-Bhm">
-                                <rect key="frame" x="86" y="140" width="220" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" red="0.30659811120000002" green="0.3346341799" blue="0.2950806581" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FX-Pb-71T">
-                                <rect key="frame" x="147" y="312" width="99" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.30659811120000002" green="0.3346341799" blue="0.2950806581" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Xác nhận">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="onAcceptClicked:" destination="pRu-J6-4he" eventType="touchUpInside" id="Owh-zz-95T"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L2E-YW-fSm">
-                                <rect key="frame" x="38" y="435" width="316" height="203"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="zS0-l3-YId">
+                                <rect key="frame" x="24" y="115" width="345" height="215"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập ngày của bạn:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uck-k3-Bhm">
+                                        <rect key="frame" x="62.666666666666671" y="0.0" width="219.66666666666663" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="0.30659811120000002" green="0.3346341799" blue="0.2950806581" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="ljK-tH-s8y">
+                                        <rect key="frame" x="19.666666666666657" y="71.666666666666657" width="306" height="50"/>
+                                        <color key="tintColor" red="0.30659811120000002" green="0.3346341799" blue="0.2950806581" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <locale key="locale" localeIdentifier="vi_VN"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWg-xX-J25">
+                                        <rect key="frame" x="125.66666666666666" y="164.66666666666669" width="94" height="50.333333333333343"/>
+                                        <color key="backgroundColor" red="0.50980395079999996" green="0.55294120309999995" blue="0.49019610879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.80000001190000003" green="0.85098040100000005" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Xác nhận">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onAcceptClicked:" destination="pRu-J6-4he" eventType="touchUpInside" id="QiK-9k-sY4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="L2E-YW-fSm">
+                                <rect key="frame" x="8" y="550" width="377" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="203" id="Vwa-55-IMk"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="K4j-qi-eFk">
+                                <rect key="frame" x="24" y="340" width="345" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="f27-WV-aU5"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ygf-ad-aZ6"/>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.85098040100000005" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ygf-ad-aZ6" firstAttribute="trailing" secondItem="zS0-l3-YId" secondAttribute="trailing" constant="24" id="CkP-na-sE4"/>
+                            <constraint firstItem="L2E-YW-fSm" firstAttribute="centerX" secondItem="IvR-Oi-JL6" secondAttribute="centerX" id="Jlw-m3-RPV"/>
+                            <constraint firstItem="ygf-ad-aZ6" firstAttribute="trailing" secondItem="L2E-YW-fSm" secondAttribute="trailing" constant="8" id="LH2-ix-dR2"/>
+                            <constraint firstItem="K4j-qi-eFk" firstAttribute="leading" secondItem="zS0-l3-YId" secondAttribute="leading" id="VN7-gC-LBv"/>
+                            <constraint firstItem="zS0-l3-YId" firstAttribute="top" secondItem="ygf-ad-aZ6" secondAttribute="top" constant="12" id="Zqn-cM-DcK"/>
+                            <constraint firstItem="L2E-YW-fSm" firstAttribute="bottom" secondItem="ygf-ad-aZ6" secondAttribute="bottom" constant="-16" id="hGl-T1-39H"/>
+                            <constraint firstItem="zS0-l3-YId" firstAttribute="leading" secondItem="ygf-ad-aZ6" secondAttribute="leading" constant="24" id="hLy-ao-UoY"/>
+                            <constraint firstItem="K4j-qi-eFk" firstAttribute="top" secondItem="zS0-l3-YId" secondAttribute="bottom" constant="10" id="hsn-8y-Du2"/>
+                            <constraint firstItem="L2E-YW-fSm" firstAttribute="top" secondItem="K4j-qi-eFk" secondAttribute="bottom" constant="40" id="huG-Zx-Ift"/>
+                            <constraint firstItem="L2E-YW-fSm" firstAttribute="leading" secondItem="ygf-ad-aZ6" secondAttribute="leading" constant="8" id="p5n-vH-vCe"/>
+                            <constraint firstItem="K4j-qi-eFk" firstAttribute="centerX" secondItem="IvR-Oi-JL6" secondAttribute="centerX" id="wgI-09-dP2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7km-ts-0QG"/>
                     <connections>
-                        <outlet property="dayInfoTextView" destination="SMv-Br-GdB" id="iFe-d4-61w"/>
+                        <outlet property="astroImageView" destination="K4j-qi-eFk" id="zc5-bc-pwx"/>
+                        <outlet property="datePicker" destination="ljK-tH-s8y" id="lw9-2Z-Kg7"/>
                         <outlet property="resultTextView" destination="L2E-YW-fSm" id="H9j-Tu-Dgg"/>
                     </connections>
                 </viewController>
@@ -475,14 +423,11 @@
     </scenes>
     <resources>
         <image name="figure.2.and.child.holdinghands" catalog="system" width="128" height="93"/>
-        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="music" width="630" height="630"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

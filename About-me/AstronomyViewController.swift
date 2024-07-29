@@ -9,25 +9,47 @@ import UIKit
 
 class AstronomyViewController: UIViewController {
 
+    @IBOutlet weak var astroImageView: UIImageView!
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var resultTextView: UITextView!
-    @IBOutlet weak var dayInfoTextView: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        resultTextView.isHidden = true
+        
+        datePicker.maximumDate = Date()
         
         // Do any additional setup after loading the view.
         
     }
     
     @IBAction func onAcceptClicked(_ sender: Any) {
-        let date: String? = dayInfoTextView.text
+        
+        let date = datePicker.date
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-dd-MM"
+        let dateStr = dateFormatter.string(from: date)
+        print(dateStr)
+
+        
         
         Task {
             do {
-                let photoInfo = try await fetchPhotoInfo(data: date!)
+                resultTextView.isHidden = false
+                
+                guard let photoInfo = try await fetchPhotoInfo(data: dateStr) else {
+                    return
+                }
+                
+                downloadImage(from: photoInfo.url)
+        
                 print("Successful!")
-                resultTextView.text = String(describing: photoInfo?.description)
+                resultTextView.text = String(describing: photoInfo.description)
             } catch {
+                resultTextView.text = "Không tìm được dữ liệu :(("
                 print("Failed, error: \(error)")
             }
         }
@@ -63,6 +85,22 @@ class AstronomyViewController: UIViewController {
             
         return photoInfo
     }
+    
+    func downloadImage(from imgURL: URL) {
+            let task = URLSession.shared.dataTask(with: imgURL) { data, response, error in
+                guard let data = data, error == nil else {
+                    print("Error: \(error?.localizedDescription ?? "No error description")")
+                    return
+                }
+                
+                DispatchQueue.main.async {
+                    if let image = UIImage(data: data) {
+                        self.astroImageView.image = image
+                    }
+                }
+            }
+            task.resume()
+        }
 
 }
 
