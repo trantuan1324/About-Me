@@ -21,10 +21,11 @@ class AstronomyViewController: UIViewController {
         astroImageView.isHidden = true
         titleLabel.isHidden = true
         
-        datePicker.maximumDate = Date()
+        let calendar = Calendar.current
+        let yesterday = calendar.date(byAdding: .day, value: -1, to: Date())
         
+        datePicker.maximumDate = yesterday
         
-        // Do any additional setup after loading the view.
         
     }
     

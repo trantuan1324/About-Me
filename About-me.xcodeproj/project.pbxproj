@@ -104,9 +104,7 @@
 				6CFED3152C56C775001D0EE4 /* App */,
 				6CFED3052C568F52001D0EE4 /* Controllers */,
 				6CFED3022C568CBA001D0EE4 /* Models */,
-				6CB951AB2C54DB9100FC3DA6 /* ViewController.swift */,
 				6CB951AD2C54DB9100FC3DA6 /* Main.storyboard */,
-				6C5B5DDD2C56ECEB0048E2CC /* AstronomyViewController.swift */,
 				6CB951B02C54DB9100FC3DA6 /* Assets.xcassets */,
 				6CB951B22C54DB9100FC3DA6 /* LaunchScreen.storyboard */,
 				6CB951B52C54DB9100FC3DA6 /* Info.plist */,
@@ -129,6 +127,8 @@
 			children = (
 				6CFED30F2C56C2BC001D0EE4 /* HobbyViewController.swift */,
 				6CFED3002C568ACD001D0EE4 /* FamilyViewController.swift */,
+				6C5B5DDD2C56ECEB0048E2CC /* AstronomyViewController.swift */,
+				6CB951AB2C54DB9100FC3DA6 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
